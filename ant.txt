@@ -1,0 +1,57 @@
+<div class="servicos">
+                <div class="servico">
+                    <img class="servico__imagem" src="components/imagens/icon_banho_tosa_edit.png" alt="serviço de banho e tosa">
+                    <div class="servico__descricao">
+                        <h5 class="servico__titulo">Banho e Tosa</h5>
+                        <p>Deixe seu pet ainda mais charmoso e cheiroso! Com produtos de qualidade e técnicas especializadas, oferecemos um banho e tosa que eles vão adorar.</p>
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <div class="servico__descricao">
+                        <h5 class="servico__titulo">Adoção</h5>
+                        <p>Dê um lar cheio de amor! Conheça nossos peludinhos disponíveis para adoção e encontre o companheiro perfeito para sua família.</p>
+                    </div>
+                    <img class="servico__imagem" src="components/imagens/icon_adocao_edit.png" alt="serviço de adoção">
+                </div>
+            </div>
+
+
+
+
+
+<section class="services">
+        <h2 id="titulo_servicos">Nossos Serviços</h2>
+
+        <div class="media">
+            <div class="descricao_veterinario">
+                <h5 class="titulo_veterinario">Clínica Veterinária</h5>
+                Seu pet merece cuidados de saúde com carinho e profissionalismo. Nossa equipe veterinária está pronta para garantir o bem-estar do seu amigo de quatro patas.
+            </div>
+            <img class="ml-3" src="components/imagens/icon_veterinario_edit.png" alt="serviço veterinário">
+            </div>
+
+             <div class="media">
+                <img class="mr-3" src="components/imagens/icon_banho_tosa_edit.png" alt="serviço de banho e tosa">
+                <div class="descricao_banho_tosa">
+                <h5 class="titulo_banho_tosa">Banho e Tosa</h5>
+                Deixe seu pet ainda mais charmoso e cheiroso! Com produtos de qualidade e técnicas especializadas, oferecemos um banho e tosa que eles vão adorar.
+            </div>
+
+            <div id="adocao">
+                <div id="descricao_adocao">
+                    <h5 id="titulo_adocao">Adoção</h5>
+                    Dê um lar cheio de amor! Conheça nossos peludinhos disponíveis para adoção e encontre o companheiro perfeito para sua família.
+                </div>
+            <img id="img_adocao"  src="components/imagens/icon_adocao_edit.png" alt="serviço de adoção">
+            </div> 
+
+            <div class="passeio">
+                <img class="mr-3" src="components/imagens/icon_passeio.png" alt="serviço de banho e tosa">
+                <div class="descricao_passeio_de_caes">
+                <h5 class="titulo_passeio_de_caes">Passeio de Cães</h5>
+                Para cães cheios de energia, oferecemos passeios divertidos e seguros. Seu pet vai se exercitar e socializar enquanto você cuida da sua rotina."
+            </div>
+
+
+        </div>

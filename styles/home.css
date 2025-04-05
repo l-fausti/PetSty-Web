@@ -1,0 +1,228 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+#titulo{
+    line-height: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;;
+    font-size: 25px;
+    color: rgb(28, 107, 180);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    margin-top: 50px;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+li>a>p{
+    display: inline-block;
+    margin: 20px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: royalblue;
+}
+
+ul>li>a{
+    text-decoration: none;
+}
+
+
+a{
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a:hover{
+    color:rgb(28, 107, 180);
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(18, 111, 199);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(18, 111, 199);
+    color: white;
+   
+}
+
+input{
+    margin-top: 20px;
+    width: 400px;
+    height: 5px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#carouselExampleIndicators{
+    margin-top: 30px;
+}
+
+.display-2{
+  font-size: 2.5rem; 
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50; 
+  text-align: center; 
+  position: relative; 
+  margin-top: 50px; 
+  padding-bottom: 10px; 
+}               
+
+
+.service-container{
+    background-color: bisque;
+    height: 800px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+
+.services {
+    text-align: center;
+    background-color: azure; 
+    padding: 20px; 
+    margin-top: 250px; 
+}
+
+#titulo_servicos {
+    margin-bottom: 30px;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: azure; 
+    padding: 20px; 
+}
+
+.servico:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.servico__imagem {
+    width: 400px;
+    height: auto;
+    margin: 0 30px;
+}
+
+.servico__descricao {
+    flex: 1;
+    text-align: left;
+}
+
+.servico__titulo {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.servico__descricao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.about {
+    text-align: center; /* Centraliza o título e o conteúdo */
+    padding: 50px 20px;
+}
+
+.about-content {
+    max-width: 800px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 20px auto; /* Centraliza o conteúdo e adiciona margem */
+}
+
+.about-text {
+    margin-bottom: 30px; /* Espaço entre o texto e a imagem */
+}
+
+.about-image {
+    text-align: center; /* Centraliza a imagem */
+}
+
+.about-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto;
+}
+
+
+.footer {
+    background-color: #e0f2f7;
+    text-align: center;
+    padding: 20px;
+}
+.footer img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+}
+.footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.contact div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.contact img {
+    width: 20px; /* Tamanho reduzido do ícone */
+    height: 20px;
+    margin-right: 8px;
+}
+.contact a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.whatsapp a {
+    color: #25d366;
+}
+.email a {
+    color: #ea4335;
+}
+
+
+
+
+/* ---------------------------------------------------- */
+

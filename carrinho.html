@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="styles/carrin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header><span>carrinho de compras<b>nick</b></span></header>
+    <main>
+        <div class="page-title">Seu carrinho</div>
+        <div class="content">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                        <td>
+                            <div class="produto">
+                                <img src="/components/imagens/racao.webp" alt="">
+                                <div class="info">
+                                    <div class="name">Nome do produto</div>
+                                    <div class="categoria">Categoria</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 120</td>
+                        <td>
+                            <div class="qty">
+                                <button id="diminuir"><i class='bx bx-minus' ></i></button>
+                                <span id="contador">2</span>
+                                <button id="aumentar"><i class='bx bx-plus' ></i></button>
+                            </div>
+                        </td>
+                        <td>R$ 240</td>
+                        <td><button class="remove"><i class='bx bx-x' ></i></button></td>
+                       </tr>
+                   
+                    </tbody>
+                </table>
+            </section>
+            <aside>
+                <div class="box">
+                    <header>Resumo da compra</header>
+                    <div class="info">
+                        <div id="total"><span>Sub-total</span> <span id="total2">R$ 418</span></div>
+                        <div><span>Frete</span> <span>Grátis</span></div>
+                        <div id="bot"><button id="bot2">Adicionar cumpom de desconto 
+                            <i class='bx bx-right-arrow-alt'></i></button></div>
+                    </div>
+                    <footer>
+                        <span>Total</span>
+                        <span>R$ 418</span>
+                    </footer>
+                </div>
+                <button>Finalizar Compra</button>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        // Preço do produto
+        const precoProduto = 120;
+        
+        // Elementos HTML
+        const contador = document.getElementById("contador");
+        const totalProduto = document.getElementById("totalProduto");
+        const total2 = document.getElementById("total2");
+        const totalFinal = document.getElementById("totalFinal");
+
+        // Função para atualizar o total
+        function atualizarTotal() {
+            const quantidade = parseInt(contador.textContent);
+            const total = precoProduto * quantidade;
+            totalProduto.textContent = `R$ ${total}`;
+            total2.textContent = `R$ ${total + 98}`; // Adicionando valor de frete
+            totalFinal.textContent = `R$ ${total + 98}`; // Total final com frete
+        }
+
+        // Aumentar quantidade
+        document.getElementById("aumentar").addEventListener("click", () => {
+            let quantidade = parseInt(contador.textContent);
+            quantidade++;
+            contador.textContent = quantidade;
+            atualizarTotal();
+        });
+
+        // Diminuir quantidade
+        document.getElementById("diminuir").addEventListener("click", () => {
+            let quantidade = parseInt(contador.textContent);
+            if (quantidade > 1) { // Evitar quantidade menor que 1
+                quantidade--;
+                contador.textContent = quantidade;
+                atualizarTotal();
+            }
+        });
+
+        // Inicializa o total quando a página carrega
+        atualizarTotal();
+    </script>
+    </script>
+
+
+</body>
+</html>

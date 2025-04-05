@@ -1,0 +1,223 @@
+body{
+    background-color: rgb(50, 41, 212);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#link-titulo1{
+    text-decoration: none;
+}
+
+#link-titulo1:hover{
+    color: #fff;
+}
+
+#link-titulo2{
+    text-decoration: none;
+}
+
+#link-titulo2:hover{
+    color: #fff;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a:hover{
+    color: rgb(10, 224, 85);
+    transition: 0.5s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(10,224,85);
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(10,224,85);
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 60px;
+    line-height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    color: rgb(10,224,85);
+}
+
+p{
+    line-height: 20px;
+    max-width: 480px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+img{
+    width: 500px;
+    padding-left: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form > a{
+    position: absolute;
+    font-size: 15px;
+    margin-top: 175px;
+    margin-left: 180px;
+    padding-left: 20px;
+    margin-bottom: 60px;
+    text-decoration: none;
+}
+
+form > a:hover{
+    text-decoration: underline;
+}
+
+#botao{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(10, 224, 85);
+    color: white;
+    font-weight: bold;
+}
+
+#botao{
+  cursor: pointer;
+}
+
+#botao_cadastro{
+    width: 98%;
+    height: 50px;
+    margin: 5px 1%;
+    padding: 5px;
+    background-color: rgb(10, 224, 85);
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+#container_login{
+    height: auto;
+}
+
+#tela_incio{
+    background-color: #fff;
+}
+
+.text_center{
+    text-align: center;
+}
+.text_center > a{
+    display: block;
+}
+
+#voltar_login > p{
+    text-align: center
+}
+
+#voltar_login > p > a{
+    width: 30px;
+    height: auto;
+}
+
+#mensagem{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    padding: 20px;
+}
+#mensagem > p{
+    color: white;
+    text-align: center;
+}
+
+.text_center{
+    text-align: center;
+}
+.text_center > a{
+    display: block;
+}
+
+#fechar{
+    background-color: transparent;
+    border: 2px solid #333; 
+    border-radius: 100%; 
+    color: #333; 
+    font-size: 20px; 
+    width: 30px; 
+    height: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+
+    /* width: 20px;
+    height: 10px;
+    font-size: 20px;
+    color: black;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px; 
+}
+#fechar:hover{
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.10s ease;
+
+
+    /* cursor: pointer;
+    background-color: #fff;
+    transition: 0.10s ease; */
+}
+
+#fechar:focus{
+    outline: none; /* Remove a borda padrão de foco */
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.6); /* Adiciona um contorno quando em foco */
+}
